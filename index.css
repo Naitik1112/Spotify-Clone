@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.926);
+    color: rgb(251, 251, 251);
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.left{
+    width: 20vw;
+    margin: 7px;
+    margin-top: 15px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.songList{
+    margin-top: 3vh;
+    max-height: 35vh;
+}
+
+.Home{
+    padding: 1vw;
+    background-color: rgb(30, 30, 30);
+    border-radius: 7px;
+}
+
+.logo img{
+    width: 8vw;
+    height: auto;
+    margin-bottom: 3vh;
+}
+
+.logo{
+    display: inline;
+}
+
+.logoandclose{
+    display: flex;
+    justify-content:space-between;
+}
+
+.close{
+    display: none;
+    right: 2px;
+}
+
+.Home ul li{
+    width: 20px;
+    display: flex;
+    margin-top: 1vw;
+    gap: 20px;
+    list-style: none;
+}
+
+.Library{
+    position: relative;
+    padding: 1vw;
+    background-color: rgb(30, 30, 30);
+    border-radius: 10px;
+    margin-top: 1vh;
+    min-height: 65vh;
+}
+
+.currentsong{
+    margin-top: 10%;
+    font-size: 110%;
+}
+
+.your-lib ul{
+    width: 20px;
+    display: flex;
+    margin-top: 1vw;
+    gap: 20px;
+    list-style: none;
+    color: grey;
+}
+.footer{
+    position:absolute;
+    bottom: 0px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 3vh;
+    flex-wrap: wrap;
+}
+.footer a{
+    color: grey;
+    font-size: 10px;
+}
+

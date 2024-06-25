@@ -1,0 +1,172 @@
+@media (max-width : 1300px) {
+    .left{
+        position: absolute;
+        left: -100%;
+        transition: 0.2s;
+        z-index: 1;
+        width: 45vw;
+        height: 90%;
+        /* top: 6%; */
+    }
+    
+    .Library{
+        min-height: 78vh;
+    }
+
+    .songList{
+        height: 55vh;
+        padding: 0.5vw 1vw;
+    }
+
+    .Song_name{
+        font-size: 80%;
+    }
+
+    .Song_artist{
+        font-size: 60%;
+    }
+
+    .info{
+        min-width: 22vw;
+        font-size: 120%;
+    }
+
+    .play{
+        width: 1vh;
+        height: 1vh;
+    }
+
+    .songList ul img {
+        height: 2vh;
+        width: auto;
+    }
+
+
+    .right{
+        width: 100vw;
+        margin: 0px 0px;
+    }
+
+    .CardContainer{
+        margin: 2vh;
+    }
+
+    .SpotifyPlaylist .card {
+        width: 15%;
+        /* height: 100%; */
+        padding: 2%;
+        padding-bottom: 5%;
+        justify-content: center;
+    }
+
+    .circle-container{
+        display: none;
+    }
+
+    .card img{
+        width: 100%;
+        height: 90%;
+        object-fit: cover;
+        justify-content: center;
+    }
+
+    .card h3{
+        font-size: 120%;
+    }
+
+    .card p{
+        font-size: 0%;
+    }
+
+    .songbar{
+        gap: 3%;
+        width: 90vw;
+    }
+
+    .hambuger-icon{
+        display: block;
+        width: 10px;
+        height: auto;
+        margin: 0 3vw;
+        margin-bottom: 1vw;
+    }
+    
+    .hambuger-icon img{
+        width: 25px;
+    }
+
+    .logo img{
+        width: 110px;
+    }
+
+    .close img{
+        width: 30px;
+    }
+
+    .Home ul li {
+        width: 20px;
+        font-size: 18px;
+    }
+
+    .searchlogo{
+        width: 100%;
+    }
+
+    .Song_name
+
+    .nav{
+        margin-top: 2vh;
+        justify-content: center;
+    }
+    
+    .close{
+        display: block;
+    }
+
+    .songinfo{
+        font-size: 2.8vh;
+    }
+
+    .time{
+        padding-top: 4%;
+        font-size: 2vh;
+    }
+
+    .header{
+        align-items: flex-end;
+    }
+
+    .buttons button{
+        width: 12vw;
+        height: 5.5vh;
+        font-size: 120%;
+        margin-top: 5%;
+    }
+
+    .previous{
+        width: 25px;
+    }
+
+    .next{
+        width: 25px;
+    }
+
+    .play_button_1 img {
+        width: 120%;
+    }
+    
+    .songtime{
+        gap: 16%;
+    }
+
+    .range {
+        height: 4vh;
+        margin-top: 2%;
+    }
+
+    .sound_logo img{
+        width: 160%;
+    }
+
+}
+
