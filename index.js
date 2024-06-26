@@ -45,6 +45,7 @@ async function getSongs( folder ) {
         // console.log(e.querySelector('.Song_name').innerHTML)
     })
     document.querySelector(".currentsong").innerHTML = "Now Playing - " + currfolder.split("songs/")[1]
+    console.log(songs)
     return songs
 }
 
