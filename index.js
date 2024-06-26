@@ -114,7 +114,7 @@ const play_music = (track)=>{
 }
 
 async function main() {
-    
+    console.log("started")
     await getSongs("songs/liked-songs");
     // console.log(songs);
 
