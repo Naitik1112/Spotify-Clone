@@ -3,6 +3,7 @@ let current_song = new Audio();
 let songs;
 let currfolder;
 async function getSongs( folder ) {
+    console.log(folder)
     currfolder = folder;
     let a = await fetch(`/Spotify-Clone/${folder}/`);
     let response = await a.text();
