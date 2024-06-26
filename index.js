@@ -5,7 +5,7 @@ let currfolder;
 async function getSongs( folder ) {
     console.log(folder)
     currfolder = folder;
-    let a = await fetch(`/Spotify-Clone/${folder}/`);
+    let a = await fetch(`/${folder}/`);
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
@@ -51,7 +51,7 @@ async function getSongs( folder ) {
 }
 
 async function displayAlbums(){
-    let a = await fetch(`/Spotify-Clone/songs/`)
+    let a = await fetch(`/songs/`)
     let response = await a.text();
     // console.log("displayAlbums() : ")
     let div = document.createElement("div")
@@ -70,11 +70,11 @@ async function displayAlbums(){
                 // console.log(e)
                 let folder = e.href.split("/songs/")[1]
                 // console.log(e.href.split("/songs/")[1])
-                let a = await fetch(`/Spotify-Clone/songs/${folder}/info.json`)
+                let a = await fetch(`/songs/${folder}/info.json`)
                 let response = await a.json();
                 // console.log(response)
                 Cardcontainer.innerHTML = Cardcontainer.innerHTML + `<div data-folder = "${response.title}" class="card">
-                            <img src="/Spotify-Clone/songs/${folder}/cover.jpg" alt="">
+                            <img src="/songs/${folder}/cover.jpg" alt="">
                             <h3>${response.title}</h3>
                             <p>${response.description}</p>
                             <div class="circle-container">
@@ -99,7 +99,7 @@ async function displayAlbums(){
 }
 
 const play_music = (track)=>{
-    current_song.src = `/Spotify-Clone/${currfolder}/`+track+`.mp3`
+    current_song.src = `/${currfolder}/`+track+`.mp3`
     // console.log(current_song)
     current_song.play()
     play.src = 'img/pause-1.svg'
